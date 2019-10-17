@@ -1,0 +1,28 @@
+.layout {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.game {
+    &--start {
+
+        .button {
+            display: block;
+            margin: 20px auto;
+        }
+    }
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__item {
+    width: calc(25% - 2em);
+    padding: 1em;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}

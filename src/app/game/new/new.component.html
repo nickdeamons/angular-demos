@@ -1,0 +1,18 @@
+Test the Game Name
+<input type="text" maxlength="20" placeholder="name" [(ngModel)]="name" (ngModelChange)="changeNameHandler($event)" />
+<div>
+
+<button class="button button--default" (click)="fetchCards()">Fetch cards</button>
+
+<div *ngIf="this.data.cards.length > 0" class="grid">
+   <div *ngFor="let card of this.data.cards" class="grid__item">
+     <div >
+        {{card.name}}
+        <div>
+            <img *ngIf="card.imageUrl"  [src]="card.imageUrl" />
+        </div>
+     </div>
+  </div>
+</div>
+
+</div>

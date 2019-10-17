@@ -1,0 +1,22 @@
+.button {
+    padding: 1em 2em;
+    min-width: 100px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    &--default {
+      background-color: rgba(gray, 0.2);
+    }
+    &--new {
+        background-color: rgba(green, 0.5);
+    }
+    &--load {
+        background-color: rgba(orange, 0.5);
+    }
+    &--exit {
+        color: white;
+        background-color: rgba(#cc1122, 0.75);
+    }
+}
